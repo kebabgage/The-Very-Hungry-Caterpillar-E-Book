@@ -1,0 +1,126 @@
+<!doctype html> 
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>The Very Hungry Caterpillar </title>
+		<link href="https://fonts.googleapis.com/css?family=Chau+Philomene+One" rel="stylesheet">
+		
+		<link rel="stylesheet" href="style/style.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+
+
+	<body onload="gameLoad()">
+		<header>
+				<nav>
+					<ul id="story-nav">
+						<li> 
+							<a id="logo-story" href="index.html"></a>
+						</li>
+
+						<li class="hidable"> 
+							<a id="main-story-img" onclick="sessionSave()"  href="story-page-1.html"></a>
+							<a href="story-page-1.html">Read</a>
+						</li>
+
+						<li class="hidable"> 
+							<a href="games-main.html" id="main-games-img"></a>
+							<a href="games-main.html">Games</a>
+						</li>
+
+						<li class="hidable"> 
+							<a href="about-main.html" id="main-grown-ups-img"></a>
+							<a href="about-main.html">Grown Ups</a>
+						</li>
+						
+					</ul>
+				</nav>
+		</header>
+				
+	
+
+		<section id="games-page"> 
+
+			<h1 id="question">What Fruit Am I?</h1>
+			<secion id="game-box">
+				<section id="reveal-box">
+					<h1 id="user-choice">Here are your clues:</h1>
+
+					<button id='hint-1' class="hintStyle" onclick="revealClue(1)">Reveal Hint #1</button>
+					<p id='clue-1' class="clueStyle">I am the first fruit to ripen in Spring</p>
+
+					<button id='hint-2' class="hintStyle" onclick="revealClue(2)">Reveal Hint #2</button>
+					<p id='clue-2' class="clueStyle">I have 200 seeds on my skin</p>
+
+					<button id='hint-3' class="hintStyle" onclick="revealClue(3)">Reveal Hint #3</button>
+					<p id='clue-3' class="clueStyle">I grow on a bush and give off a sweet fragrance</p>
+
+					<button id='hint-4' class="hintStyle" onclick="revealClue(4)">Reveal Hint #4</button>
+					<p id='clue-4' class="clueStyle">I am technically not a berry</p>
+				</section>
+
+				<section>
+					<img id="speech-caterpillar" alt="Hungry Caterpillar">
+				</section>
+
+				<section id="guess-box">
+					<h1 id="user-choice">You are: </h1>
+					<p>(Click on an option)</p>
+					
+					<a id='apple-guess' class='buttonStyle' href='guessing-wrong.html'>An apple</a>
+					<a id='pear-guess' class='buttonStyle' href='guessing-wrong.html'>A pear</a>
+					<a id='plum-guess' class='buttonStyle' href='guessing-wrong.html'>A plum</a>
+					<a id='strawberry-guess' class='buttonStyle' href='guessing-correct.html'>A strawberry</a>
+					<a id='orange-guess' class='buttonStyle' href='guessing-wrong.html'>An orange</a>
+				</section>
+			</secion>
+	
+			
+		</section>
+
+		<section id='bottom-part'>
+
+
+			<section id="text-area">
+				<p id="ground"></p>
+			</section>
+
+			<footer id="site-footer">
+
+				<section id="footer-header">
+
+					<h2>The Very Hungry Caterpillar</h2>
+				</section>
+
+				<section>
+				
+					<ul>
+						<li>
+							<a class="footer-list" href="index.html">Home</a>
+						</li>
+
+						<li class="footer-list" >|</li>
+
+						<li> 
+							<a onclick="sessionSave()" class="footer-list" href="story-page-1.html">Read Story</a>
+						</li>
+
+						<li class="footer-list" >|</li>
+
+						<li>
+							<a class="footer-list" href="games-main.html">Games</a>
+						</li>
+
+						<li class="footer-list" >|</li>
+
+						<li>
+							<a class="footer-list" href="about-main.html">Grown Ups</a>
+						</li>
+					
+					</ul>
+				</section>
+			</footer>
+		</section>
+	</body>
+</html>

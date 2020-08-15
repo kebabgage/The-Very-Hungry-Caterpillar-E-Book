@@ -1,0 +1,1981 @@
+body {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	
+	justify-content: space-between;
+	align-items: center;
+
+
+	font-family: 'Chau Philomene One', 'Raleway', sans-serif;
+	font-size: 14px;
+	
+	margin-left: 5%;
+	margin-right:5%;
+
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+	background: #3BB9FF;
+
+	height: 100vh;
+	color: black;
+}
+
+
+
+
+
+/**************************************************
+
+	Bottom part styling *************************************************************************************/
+
+#bottom-part {
+
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NAV BAR  ***************************************************************************************************
+
+**************************************************************************************************************/ 
+nav {	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+	color: #59a454;
+
+	text-decoration: none;
+	text-transform: uppercase;
+	
+	text-shadow: rgba(0,0,0,0.5) 0 1px 0;
+}
+
+
+li img {
+	
+	display: block;	
+}
+
+li a {
+	display: block;
+
+	text-decoration: none;
+	list-style-type: none;
+
+	font-size: 23px;
+}
+
+li:hover a{
+
+	transform: scale(1.01);
+	color: #6495ed;
+
+}
+
+li a:visited{
+	
+	color: #59a454;
+}
+
+
+nav img {
+	display: block;
+}
+
+nav li {
+
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center ;
+	text-decoration: none;
+	list-style-type: none; 
+}
+
+
+
+
+
+
+
+
+/*Homepage Nav style *******************************************************************************************
+
+		this just adds the content to 
+		each of the items in the navigational bar *************************************************************/
+
+#main-logo-img {
+	content: url("../images/logo.png");
+	height: 152px;
+	width: 500px;
+
+	background: lightblue;
+    border-radius: 25px;
+
+}
+
+#main-story-img {
+	content: url("../images/nav-apple.png");
+	width: 71px;
+	height: 105.3px;
+}
+
+#main-story-img:hover {
+	content: url("../images/nav-apple-cat.png");
+	width: 71px;
+	height: 105.3px;
+}
+
+#main-games-img {
+	content: url("../images/nav-orange.png");
+	width: 84.67px;
+	height: 114.67px;
+}
+
+#main-games-img:hover {
+	content: url("../images/nav-orange-cat.png");
+	width: 84.67px;
+	height: 114.67px;
+}
+
+#main-grown-ups-img {
+	content: url("../images/nav-pear.png");
+	width: 63.3px;
+	height: 112px;
+}
+
+#main-grown-ups-img:hover {
+	content: url("../images/nav-pear-cat.png");
+	width: 63.3px;
+	height: 112px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Index ********************************************************************************************************
+	
+	This creates the layout for the homepage. ********************************************************************/ 
+	
+
+#story-link-img {
+	content: url("../images/main_story_img.jpg");
+	width: 50%;
+	height: 50%;
+
+	margin-top: 5%;
+	border: 3px solid darkgreen;
+
+}
+
+#story-link-img:hover {
+	transform: scale(1.05);
+	border: 3px solid yellow;
+}
+
+
+#story-link-img:hover #question {
+
+	display: flex;
+	flex-direction: row;
+}
+
+
+
+
+
+
+
+
+/* Games Main Page **********************************************************************************************
+
+	Creates the layout for the Games page. *********************************************************************/
+
+#guessing-game-img {
+
+	content: url(
+		"../images/games-img.PNG");
+	border: solid black 2px;
+}
+
+#guessing-game-img:hover {
+
+	transform: scale(1.1);
+	border: solid yellow 4px;
+}
+
+#games-cont {
+
+	display: inline-block;
+	text-align: left;
+
+	position: relative;
+}
+
+
+
+
+
+
+/* About Main page ********************************************************************************************/
+
+@media screen and (max-width: 1300px) {
+
+		#about-para {
+
+			font-size: 18px;
+
+			width: 100%;
+
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+			
+
+			background-color: lightblue;
+
+			padding: 0px;
+		}
+
+		#spider {
+
+			content: url('../images/spider.png');
+
+			height: 100px;
+			width: 161px;
+		}
+
+		#cricket {
+
+			content: url('../images/cricket.png');
+
+			height: 100px;
+			width: 161px;
+		}
+
+		#ladybug {
+
+			content: url('../images/ladybug.png');
+
+			height: 100px;
+			width: 151px;
+		}
+
+		#bear {
+
+			content: url('../images/bear.png');
+
+			height: 100px;
+			width: 80px;
+		}
+
+		.caption {
+			padding: 0px;
+		}
+
+}
+
+@media screen and (min-width: 1300px) {
+
+
+	#spider {
+		content: url('../images/spider.png');
+
+		height: 150px;
+		width: 211px;
+	}
+
+	#cricket {
+		content: url('../images/cricket.png');
+
+		height: 150px;
+		width: 211px;
+	}
+
+	#ladybug {
+		content: url('../images/ladybug.png');
+
+		height: 150px;
+		width: 211px;
+	}
+
+	#bear {
+
+		content: url('../images/bear.png');
+
+		height: 150px;
+		width: 120px;
+	}
+
+	.caption {}
+
+
+	#about-para {
+
+		width: 100%;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		font-size: 24px;
+
+		background-color: lightblue;
+
+		padding: 0px;
+		}		
+
+
+}
+
+#about-section {
+	text-align: left;
+
+
+	width: 80%;
+
+	color: darkgreen;
+}
+
+#about-heading {
+
+	font-size: 25px;
+}
+
+#ref-heading {
+
+	font-size: 20px;
+}
+
+#references li{
+
+	list-style: none;
+	background: lightblue;
+	font-size: 14px;
+}
+
+#eric {
+
+	content: url('../images/eric-carle.png');
+}
+
+#me {
+
+	content: url('../images/me.png');
+	height: 200px;
+	width: 152px;
+}
+
+
+.book-info {
+
+	padding: 2%;
+}
+
+
+#about-para li {
+
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+}
+
+
+
+
+
+
+
+
+/* Site Footer **************************************************************************************************
+		
+	This creates the coloring and styling of the recurring footer in the website. *******************************/
+#site-footer {
+    min-width: 90%;
+    background-color: #C02F1D;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    display: block;
+    margin: 0px;
+    padding: 1em;
+}
+
+#site-footer ul li {
+
+	display: inline-block;
+	list-style: none; 
+}
+
+#site-footer section {
+
+	display: block;
+	color: yellow;
+}
+
+#site-footer a,#footer-list {
+
+	color: black;
+}
+
+
+
+
+
+
+/* StoryNav style ********************************************************************************************
+
+		this adds the hiding and showing effect when the user hovers over the main logo *********************/
+
+
+.hidable {
+	
+	position: relative;
+	animation: slideout 0.5s forwards;
+}
+
+
+@keyframes slide {
+	0% {top:-200px;}
+	100% {top: 0px;}
+}
+
+@keyframes slideout {
+	0% {top:0;}
+	100% {top: -200px;}
+}
+
+@keyframes wiggle {
+
+	from{transform:rotate(0deg);}
+	to{transform:rotate(5deg);}
+	
+}
+
+
+#story-nav {
+
+
+}
+
+#story-nav:hover {
+	
+}
+
+#story-nav:hover .hidable {
+
+	display: inline-flex;
+
+	animation: slide 0.5s forwards;
+}
+
+#story-nav:hover #logo-story {
+
+	padding-right: 0px;
+	padding-bottom: 0px;
+
+	animation: wiggle 0.5s 2 forwards;
+	animation-direction: alternate;
+
+	animation: wiggle 0.2s 2;
+	animation-direction: alternate-reverse;
+
+	animation: wiggle 0.5s 2 forwards;
+	animation-direction: alternate;
+
+	animation: wiggle 0.2s 2;
+	animation-direction: alternate-reverse;
+}
+
+
+#logo-story {
+
+	display: block;
+	justify-content: flex-start;
+	content: url("../images/cate-logo.png");
+	height: 114px;
+	width: 116px;
+}
+
+
+
+
+
+
+/* Generic GamesPage styling ***********************************************************************************
+
+	This handles the styling for the confirmation page (buttons). *********************************************/
+
+
+#games-page {
+
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+}
+
+#cont-box {
+	display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    text-align: center;
+}
+
+
+#button-box {
+
+	margin-bottom: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#pear-q {
+
+	content: url('../images/pear-pg1.png');
+
+	height: 15%;
+	width: 15%;
+}
+
+#pear-q:hover {
+
+	content: url('../images/pear-pg1-e.png');
+}
+
+#apple-q {
+
+	content: url('../images/apple-pg.png');
+
+	height: 15%;
+	width: 15%;
+}
+
+#apple-q:hover {
+
+	content: url("../images/apple-pg-e.png");
+}
+
+@media screen and (min-height: 801px) {
+
+	#question {
+
+	font-size: 55px;
+	color: darkgreen;
+	}
+
+	.buttonStyle {
+
+		border: none;
+		color: white;
+		font-size: 25px;
+		display: inline-block;
+		padding: 15px 32px;
+		cursor: pointer;
+		text-decoration: none;
+	}
+
+	.buttonStyleAlt {
+		border: none;
+		color: white;
+		font-size: 25px;
+		display: inline-block;
+		padding: 15px 32px;
+		cursor: pointer;
+		text-decoration: none;
+		padding-bottom: 40px;
+	}
+
+
+	.story-img {
+
+	position: relative;
+	z-index: -1;
+	width: 90%;
+	}
+
+	#guess-box {
+
+		width: 250px;
+	}
+
+	#correct-page {
+
+		position: relative;
+
+		width: 100%;
+
+		display: flex; 
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+}
+
+@media screen and (max-height: 800px) {
+
+	#correct-page {
+
+		position: relative;
+
+		width: 100%;
+
+		display: flex; 
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.story-img {
+
+		position: relative;
+		z-index: -1;
+		width: 90%;
+		margin-top: -100px;
+	}
+
+	#question {
+
+		font-size: 45px;
+		color: darkgreen;
+	}
+
+	#games-page {
+		margin-top: -100px;
+	}
+
+	
+
+	#user-choice {
+
+		font-size: 24px;
+		margin-bottom: 5px;
+	}
+
+	#guess-box {
+
+		width: 500px;
+
+	}
+
+	.buttonStyle {
+
+		border: none;
+		color: white;
+		font-size: 20px;
+		display: inline-block;
+		padding: 15px 32px;
+		cursor: pointer;
+		text-decoration: none;
+		padding-bottom: 10px;
+	}
+
+	.buttonStyleAlt {
+		border: none;
+		color: white;
+		font-size: 25px;
+		display: inline-block;
+		padding: 15px 32px;
+		cursor: pointer;
+		text-decoration: none;
+		margin-bottom: -35px;
+	}
+
+	
+}
+
+#pos-but {
+
+	background-color: #4CAF50;
+}
+
+#pos-but:hover {
+
+	transform: scale(1.1);
+}
+
+#neg-but  {
+	background-color: #C02F1D;
+	
+}
+
+#neg-but:hover {
+
+	transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+/* Guessing Game Style ***************************************************************************
+
+*************************************************************************************************/
+
+#speech-caterpillar {
+
+	content: url("../images/caterpillar-speech.png");
+	max-height: 50%;
+	max-width: 50%
+}
+
+#game-box {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#reveal-box{
+
+	display: inline-flex;
+	flex-direction: column;
+	width: 450px;
+}
+
+
+
+.clueStyle {
+
+	color: #3f48cc ;
+	font-size: 20px;
+
+	
+}
+
+.hintStyle {
+
+	font-size: 20px;
+	border: none;
+	color: white;
+	background-color: darkblue;
+	font-family: 'Raleway', sans-serif;
+	display: inline-block;
+	padding: 15px 32px;
+	cursor: pointer;
+	text-decoration: none;
+
+	margin-bottom: 10px;
+}
+
+#user-choice {
+
+	color: darkgreen;
+	font-size: 30px;
+}
+
+#guess-box {
+
+	display: inline-flex;
+	flex-direction: column;
+}
+
+#orange-guess {
+	background-color: #ff6600;
+	
+}
+
+#strawberry-guess {
+
+	background-color: #fc5a8d;
+}
+
+#plum-guess {
+
+	background-color: #9370DB;
+}
+
+#pear-guess {
+
+	background-color: #2BB34B;
+}
+
+#apple-guess {
+
+	background-color: #DF1208;
+}
+
+#guessed-text {
+
+	color: darkgreen;
+	font-size: 40px;
+}
+
+#continue-story {
+
+	background-color: #4CAF50;
+	position: relative;
+}
+
+#retry {
+
+	background-color: #C02F1D;
+	position: relative;
+	
+}
+
+.imageAlt {
+
+	height: 248px;
+}
+
+
+
+
+
+/* StoryPage style ***************************************************************************************
+
+		This styling creates the content within the story page. *************************************/
+
+
+#storyboard {
+
+	
+	position: relative;
+
+	width: 80%;
+
+	display: flex; 
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+}
+
+.story-img {
+
+	position: relative;
+	z-index: -1;
+
+
+
+	height: 90%;
+	width: 90%;
+}
+
+.sweetsboard {
+
+	margin-bottom: 70px;
+}
+
+
+
+
+
+#right-arrow {
+
+	content: url("../images/arrow_f.png");
+
+	position: fixed;
+	right:15px;
+	top: 235px;
+
+	height: 109.5px;
+	width: 164px;
+
+}
+
+#right-arrow:hover {
+
+	transform: scale(1.1);
+}
+
+#left-arrow {
+
+	content: url("../images/arrow_b.png");
+
+	position: fixed;
+	left: 15px;
+	top: 235px;
+
+	height: 109.5px;
+	width: 164px;
+}
+
+#left-arrow:hover {
+
+	transform: scale(1.1);
+}
+
+#text-area {
+    align-items: center;
+    margin: 0px;
+    margin-top: -500px;
+}
+
+
+@media screen and (min-width: 1500px) {
+
+	.story-text {
+	    position: absolute;
+	    bottom: 140px;
+	    left: 20%;
+	    color: darkblue;
+	    font-size: 40px;
+	    z-index: 1;
+	    margin: 0px;
+	}
+
+	#ground {
+	    position: relative;
+	    content: url(../images/groundp2.png);
+	    width: 100%;
+	    z-index: -1;
+	    margin: 0px;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+
+	.story-text {
+	    position: absolute;
+	    bottom: 140px;
+	    left: 10%;
+	    color: darkblue;
+	    font-size: 30px;
+	    z-index: 1;
+	    margin: 0px;
+	}
+
+	#ground {
+	    position: relative;
+	    content: url(../images/groundp2.png);
+	    width: 100%;
+	    height: 600px;
+	    z-index: -1;
+	    margin: 0px;
+	}
+}
+
+/* Page One formatting. ********************************************************************/
+
+#moon-pic {
+
+	bottom: -150px;
+}
+
+
+/*Page Two Formatting. ************************************************************************
+
+**********************************************************************************************/
+
+/* Small Screens */
+@media only screen and (min-height: 19px) {
+	#sun-img {
+		display: block;
+		position: relative;
+		bottom: 0px;
+		left: 5px;
+		z-index: -1;
+	}
+
+	#sun-img-tr {
+
+		display: block;
+		position: relative;
+		z-index: -1;
+		animation: sunrise 5s forwards;
+	}
+
+	.caterpillar-small {
+
+		content: url("../images/hungry_small.png");
+		height: 159px;
+		width: 123.2px;
+		position: relative;
+		bottom: 150px;
+		right: 440px;
+	
+	}
+
+	#caterpillar-pg2 {
+		animation: cat-egg 2s forwards;
+	}
+
+	#caterpillar-pg3 {
+		animation: cat-walk 5s forwards;
+	}
+}
+
+@keyframes sunrise {
+
+	0% {bottom: -400px;}
+
+	100% {bottom: 0px;}
+}
+
+
+@keyframes cat-egg {
+
+	0% {bottom: 150px;
+		right: 1000px;}
+
+	50% {bottom: 300px;
+		right: 700px;}
+
+	100% {bottom: 150px;
+		right: 440px;}
+}
+
+@keyframes cat-walk {
+
+	0% {right: 440px;}
+
+	25% {bottom: 170px;
+		right: 340px;}
+
+	50% {bottom: 150px;
+		right: 240px;}
+
+	75% {bottom: 150px;
+		right: 140px;}
+
+	80% {bottom: 150px;
+		right: 80px;}
+
+	100% {bottom: 120px;
+		right: 0px;}
+}
+
+
+
+/* Medium screens ********************************/
+@media screen and (min-height: 919px) {
+
+	#sun-img {
+
+		display: block;
+		position: relative;
+		bottom: -200px;
+		left: 5px;
+		z-index: -1;
+	}
+
+	#sun-img-tr {
+
+		display: block;
+		position: relative;
+		z-index: -1;
+		animation: sunrise-med 5s forwards;
+	}
+
+	.caterpillar-small {
+
+		content: url("../images/hungry_small.png");
+		height: 159px;
+		width: 123.2px;
+		position: relative;
+		bottom: 150px;
+		right: 440px;
+	}
+
+	#caterpillar-pg2 {
+		animation: cat-egg-med 2s forwards;
+	}
+
+	#caterpillar-pg3 {
+		animation: cat-walk-med 5s forwards;
+	}
+}
+
+@keyframes sunrise-med {
+
+	0% {bottom: -600px;}
+
+	100% {bottom: -200px;}
+}
+
+
+@keyframes cat-egg-med {
+
+	0% {bottom: 00px;
+		right: 1000px;}
+
+	50% {bottom: 100px;
+		right: 700px;}
+
+	100% {bottom: 0px;
+		right: 440px;}
+}
+
+@keyframes cat-walk-med {
+
+	0% {
+		bottom: 40px;
+		right: 440px;}
+
+	25% {bottom: 60px;
+		right: 340px;}
+
+	50% {bottom:40px;
+		right: 240px;}
+
+	75% {bottom: 30px;
+		right: 140px;}
+
+	80% {bottom: 40px;
+		right: 80px;}
+
+	100% {bottom: 20px;
+		right: 0px;}
+}
+
+
+/* Large Screen *******************************************/
+@media screen and (min-height: 1200px) {
+
+	#sun-img {
+		display: block;
+
+		position: relative;
+
+		bottom: -200px;
+		left: 5px;
+
+		z-index: -1;
+	}
+
+	#sun-img-tr {
+
+		display: block;
+		position: relative;
+		z-index: -1;
+
+
+		animation: sunrise-lrg 5s forwards;
+	}
+
+	.caterpillar-small {
+
+		content: url("../images/hungry_small.png");
+		height: 159px;
+		width: 123.2px;
+
+		position: relative;
+		bottom: -100px;
+		right: 440px;
+	
+	}
+
+	#caterpillar-pg2 {
+
+		
+		animation: cat-egg-lrg 2s forwards;
+	}
+
+	#caterpillar-pg3 {
+
+		animation: cat-walk-lrg 5s forwards;
+	}
+
+}
+
+
+@keyframes sunrise-lrg {
+
+	0% {bottom: -1000px;}
+
+	100% {
+		bottom: -200px;}
+}
+
+
+@keyframes cat-egg-lrg {
+
+	0% {
+
+		bottom: -100px;
+		right: 1000px;
+	}
+
+	50% {
+
+		bottom: 100px;
+		right: 700px;
+	}
+
+	100% {
+
+		bottom: -100px;
+		right: 440px;
+	}
+}
+
+
+
+@keyframes cat-walk-lrg {
+
+	0% {
+		bottom: -100;
+		right: 440px;
+	}
+
+	25% {
+
+		bottom: -110px;
+		right: 340px;
+	}
+
+	50% {
+		bottom: -130px;
+		right: 240px;
+	}
+
+	75% {
+		bottom: -130px;
+		right: 140px;
+	}
+
+	80% {
+
+		bottom: -150px;
+		right: 80px;
+	}
+
+	100% {
+
+		bottom: -110px;
+		right: 0px;
+	}
+
+}
+
+
+
+
+
+
+/* Monday to Friday pages******************************************************************************************
+
+*******************************************************************************************************************/
+
+#fruit-box {
+
+	display: flex;
+	justify-content: space-between;
+	
+	align-items: center;
+}
+
+.fruit {
+
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.fruit:hover {
+
+	transform: scale(1.1);
+}
+
+
+
+#apple-pg {
+	content: url("../images/apple-pg.png");
+}
+
+#pear-pg1 {
+	content: url("../images/pear-pg1.png");
+}
+
+#pear-pg2 {
+	content: url("../images/pear-pg2.png");
+}
+
+#plum-pg1 {
+	content: url("../images/plum-pg1.png");
+}
+
+#plum-pg2 {
+	content: url("../images/plum-pg2.png");
+}
+
+#plum-pg3 {
+	content: url("../images/plum-pg3.png");
+}
+
+#strawb-pg1 {
+	content: url("../images/strawb-pg1.png");
+}
+
+#strawb-pg2 {
+	content: url("../images/strawb-pg2.png");
+}
+
+#strawb-pg3 {
+	content: url("../images/strawb-pg3.png");
+}
+#strawb-pg4 {
+	content: url("../images/strawb-pg4.png");
+}
+
+#orange-pg1 {
+	content: url("../images/orange-pg1.png");
+}
+
+#orange-pg2 {
+	content: url("../images/orange-pg2.png");
+}
+
+#orange-pg3 {
+	content: url("../images/orange-pg3.png");
+}
+
+#orange-pg4 {
+	content: url("../images/orange-pg4.png");
+}
+
+#orange-pg5 {
+	content: url("../images/orange-pg5.png");
+}
+
+
+/* pg ../images of fruit image change. */
+
+
+#apple-pg:hover {
+	content: url("../images/apple-pg-e.png");
+}
+
+#pear-pg1:hover {
+	content: url("../images/pear-pg1-e.png");
+}
+
+#pear-pg2:hover {
+	content: url("../images/pear-pg2-e.png");
+}
+
+#plum-pg1:hover {
+	content: url("../images/plum-pg1-e.png");
+}
+
+#plum-pg2:hover {
+	content: url("../images/plum-pg2-e.png");
+}
+
+#plum-pg3:hover {
+	content: url("../images/plum-pg3-e.png");
+}
+
+#strawb-pg1:hover {
+	content: url("../images/strawb-pg1-e.png");
+}
+
+#strawb-pg2:hover {
+	content: url("../images/strawb-pg2-e.png");
+}
+
+#strawb-pg3:hover {
+	content: url("../images/strawb-pg3-e.png");
+}
+#strawb-pg4:hover {
+	content: url("../images/strawb-pg4-e.png");
+}
+
+#orange-pg1:hover {
+	content: url("../images/orange-pg1-e.png");
+}
+
+#orange-pg2:hover {
+	content: url("../images/orange-pg2-e.png");
+}
+
+#orange-pg3:hover {
+	content: url("../images/orange-pg3-e.png");
+}
+
+#orange-pg4:hover {
+	content: url("../images/orange-pg4-e.png");
+}
+
+#orange-pg5:hover {
+	content: url("../images/orange-pg5-e.png");
+}
+
+
+/** Final Pages ******************************************************************************************************************
+		
+	*****************************************************************************************************************************/
+
+/* Sunday page. ********************************************************************************************/
+
+#sunday-leaf {
+
+	
+	content: url(../images/sunday-leaf.png);
+    bottom: 10px;
+    position: fixed;
+    height: 700px;
+    width: 80%;
+}
+
+/* Fat Caterpillar. *********************************************************************************************/
+
+#fat-cater {
+
+	content: url("../images/fatty.png");
+	height: 50%;
+	width: 50%;
+
+	top: 100px;
+}
+
+#storyboard:hover #fat-cater {
+
+	animation: wiggle 0.5s 2 forwards;
+	animation-direction: alternate;
+}
+
+/* Cocoon ***************************************************************************************************/ 
+
+#fat-cater-c {
+
+	display: block;
+
+	content: url("../images/fatty.png");
+	height: 50%;
+	width: 50%;
+
+	top: 100px;
+
+	animation: shrink 2s forwards;
+}
+
+@keyframes shrink {
+
+	from {transform: scale(1);}
+
+	to {transform: scale(0.8);}
+}
+
+#cocoon-b {
+	animation: cocoon-enter 5s forwards;
+	
+	
+	content: url("../images/cocoon.png");
+
+	height: 60%;
+	width: 60%;
+
+	position: fixed;
+	top: 240px;
+}
+
+
+@keyframes cocoon-enter {
+
+	0% {
+		
+    	transform: scaleX(0.3);
+	}
+	40% {
+	    transform: scaleX(1.02);
+	}
+	60% {
+	    transform: scaleX(0.98);
+	}
+	80% {
+	    transform: scaleX(1.01);
+	}
+	100% {
+	    transform: scaleX(0.98);
+	}
+	80% {
+		
+	    transform: scaleX(1.01);
+	}
+	100% {
+	    transform: scaleX(1);
+	}
+}
+
+/* Cocoon Breaking Page **************************************************************************************/ 
+
+
+#cocoon {
+
+	display: block;
+
+	content: url("../images/cocoon.png");
+
+	height: 60%;
+	width: 60%;
+
+	position: fixed;
+	top: 200px;
+
+	z-index: -1;
+
+	animation: wrigglehatch 1s forwards;
+}
+
+#cocoon-break {
+
+	display: block;
+
+	height: 60%;
+	width: 60%;
+
+	position: fixed;
+	top: 200px;
+
+	z-index: -1;
+
+	content: url("../images/cocoon-broke.png");
+
+	animation: picAlt 1s forwards;
+}
+
+@keyframes wrigglehatch {
+
+	0% {
+		transform: : scaleX(1.01);
+	}
+	20% {
+		transform: : scaleX(0.99);
+	}
+	40% {
+		transform: scaleX(1.01);
+	}
+	60% {
+		transform: scaleX(0.99);
+	}
+	80% {
+		transform: scaleX(1.01);
+	}
+	99% {
+		opacity: 1;
+		transform: scaleX(0.99);
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes picAlt {
+
+	0% {
+		opacity: 0;
+	}
+
+	99% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Butterfly page *******************************************************************************************/
+
+#small-cocoon {
+
+	content: url("../images/cocoon-broke.png");
+
+	width: 10%;
+	height: 10%;
+
+	position: fixed;
+
+	bottom: 160px;
+	right: 400px;
+
+	animation: wiggle 0.5s 2 forwards;
+	animation-direction: alternate;
+
+	animation: wiggle 0.5s 2;
+	animation-direction: alternate-reverse;
+
+	animation: wiggle 0.5s 2 forwards;
+	animation-direction: alternate;
+
+	animation: wiggle 0.5s 2;
+	animation-direction: alternate-reverse;
+}
+
+#butterfly {
+
+	content: url("../images/butterfly.png");
+
+	width: 80%;
+	height: 80%;
+
+	position: fixed;
+
+	bottom: 160px;
+
+	animation: butterfly-tr 5s forwards;
+}
+
+@keyframes butterfly-tr {
+
+	0% {
+		opacity: 0;
+	}
+
+	49% {
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+		width: 1%;
+		height: 1%;
+		right: 500px;
+		bottom: 200px;
+		z-index: -1;
+	}
+
+	60% {
+
+		right: 600px;
+	}
+
+	100%{
+		width: 80%;
+		height: 80%;
+		bottom: 160px;
+		z-index: 1;
+	}
+}
+
+
+
+/* End Page. 8**********************************************************************************************************************/
+
+#butterfly-end-1 {
+
+	content: url("../images/butterfly.png");
+
+	width: 40%;
+	height: 40%;
+
+	position: fixed;
+
+	left: 200px;
+	bottom: 200px;
+
+	animation: butterflyfly 10s forwards;
+	animation-iteration-count: infinite;
+}
+
+#butterfly-end-2 {
+
+	content: url("../images/butterfly-in.png");
+
+	width: 40%;
+	height: 40%;
+
+	position: fixed;
+
+	left: 200px;
+	bottom: 200px;
+
+	animation: butterflyfly 10s reverse;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes butterflyfly {
+
+	0% {
+		left: 200px;
+		bottom: 200px;
+	}
+	
+
+	5% {
+		bottom: 180px;
+	}
+
+	10% {bottom: 200px;}
+
+	15% {
+		bottom: 180px;
+	}
+
+	20% {bottom: 200px;}
+
+	25% {
+		bottom: 180px;
+	}
+
+	30% {bottom: 220px;}
+
+	35% {
+		bottom: 200px;
+	}
+
+	40% {
+		bottom: 220px;
+	}
+
+	45% {
+		bottom: 200px;
+	} 
+
+	50% {
+		left: 900px;
+		opacity: 1;
+	}
+
+	51% {
+		opacity: 0;
+	}
+
+	100% {
+
+		opacity: 0;
+		left: 600px;
+	}
+}
+
+	
+
+
+
+
+
+/* SweetsPage Style *********************************************************************************************
+
+	This styles the specific ../images and animations of the sweets page ******************************************/
+
+
+
+#ache {
+	content: url("../images/ache.png");
+
+	position: fixed;
+
+	bottom: 200px;
+
+	width: 3%;
+	height: 5%;
+
+	animation: ache 2s forwards;
+	animation-iteration-count: infinite;
+	
+}
+
+@keyframes ache {
+
+	0% {
+		transform: rotate(0deg);
+	}
+
+	20% {
+		transform: rotate(20deg);
+	}
+
+	40% {
+		transform: rotate(0deg);
+	}
+
+	60% {
+		transform: rotate(-20deg);
+	}
+
+	80% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+
+	
+}
+
+#caterpillar-sweets {
+	width: 30%;
+	height: 30%;
+}
+
+/* Arrangement for small screens */
+@media screen and (max-height: 800px) {
+
+	.sweet-image {
+
+		height: 10%;
+		width: 10%;
+		margin-left: -15px;
+	}
+
+
+	#sw-image-box {
+
+
+		display: inline-flex;
+		justify-content: space-around;
+		align-items: flex-start;
+	}
+}
+
+
+#sweets-box {
+	position: relative;
+
+	display: flex;
+
+	flex-direction: row;
+	top: 15%;
+}
+
+
+#hint {
+
+	font-size: 20px;
+	color: white;
+
+	position: fixed;
+	bottom: 120px;
+	right: 30%;
+
+	z-index: 2;
+}
+
+#sweets-box {
+
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+}
+
+#sw-text-box {
+	display: inline-flex;
+
+	justify-content: space-between;
+	align-items: flex-start;
+
+	margin-bottom: 40px;
+}
+
+#sw-image-box {
+	display: inline-flex;
+
+	justify-content: space-between;
+	align-items: center;
+	align-items: flex-start;
+	
+}
+
+
+.sweet-text {
+
+	color: darkgreen;
+	font-size: 30px;
+
+	margin-right: 45px;
+}
+
+#choc-cake {
+	content: url("../images/choc-cake.png");
+}
+
+#ice-cream {
+	content: url("../images/ice-cream.png");
+}
+
+#pickle {
+	content: url("../images/pickle.png");
+}
+
+#cheese {
+	content: url("../images/cheese.png");
+}
+
+#salami {
+	content: url("../images/salami.png");
+}
+
+#lollipop {
+	content: url("../images/lollipop.png");
+}
+
+#cherry {
+	content: url("../images/cherry-pie.png");
+}
+
+#sausage {
+	content: url("../images/sausage.png");
+}
+
+#cupcake {
+	content: url("../images/cupcake.png");
+}
+
+#watermelon {
+	content: url("../images/watermelon.png");
+}
+
+/* Hover functions */ 
+#choc-cake:hover {
+	content: url("../images/choc-cake-e.png");
+}
+
+#ice-cream:hover {
+	content: url("../images/ice-cream-e.png");
+}
+
+#pickle:hover {
+	content: url("../images/pickle-e.png");
+}
+
+#cheese:hover {
+	content: url("../images/cheese-e.png");
+}
+
+#salami:hover {
+	content: url("../images/salami-e.png");
+}
+
+#lollipop:hover {
+	content: url("../images/lollipop-e.png");
+}
+
+#cherry:hover {
+	content: url("../images/cherry-pie-e.png");
+}
+
+#sausage:hover {
+	content: url("../images/sausage-e.png");
+}
+
+#cupcake:hover {
+	content: url("../images/cupcake-e.png");
+}
+
+#watermelon:hover {
+	content: url("../images/watermelon-e.png");
+}
