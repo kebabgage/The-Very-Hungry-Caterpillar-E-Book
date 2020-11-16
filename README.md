@@ -1,6 +1,6 @@
 # The Very Hungry Caterpillar E-Book
 
-An electronic and interactive website based off The Very Hungry Caterpillar. 
+An electronic book website inspired by The Very Hungry Caterpillar by Eric Carle. 
 
 Written in HTML, CSS and JS for DECO1400 in 2017. 
 
